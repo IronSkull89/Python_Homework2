@@ -3,15 +3,15 @@
 #  Определите минимальное число монеток, которые нужно перевернуть, чтобы все монетки были повернуты вверх одной и той же стороной.
 #  Выведите минимальное количество монет, которые нужно перевернуть
 
-# from random import randint
-# count = int(input("Введите количество монет: "))
-# i = 0
-# countHeads = 0
-# countTails = 0
-# for i in range(count):
-#     if randint(0,2): countHeads += 1
-#     else: countTails += 1    
-# print(f"Требуется перевернуть {min(countHeads,countTails)} монет")
+from random import randint
+count = int(input("Введите количество монет: "))
+i = 0
+countHeads = 0
+countTails = 0
+for i in range(count):
+    if randint(0,1): countHeads += 1
+    else: countTails += 1    
+print(f"Требуется перевернуть {min(countHeads,countTails)} монет")
 
 
 # Задача 12: Петя и Катя – брат и сестра. Петя – студент, а Катя – школьница. Петя помогает Кате по математике. 
